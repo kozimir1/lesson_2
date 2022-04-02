@@ -1,0 +1,1407 @@
+/* &display=swap */
+@import "null.css";
+/* ================================================================ */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	margin: 0px auto;
+	max-width: 1024px;
+	/* border: 1px solid red; */
+	padding: 120px 0px 0px 0px;
+}
+/* ================================================================ */
+
+[class*="__container"] {
+}
+.body {
+	padding: 0px 0px 0px 00px;
+	/* font-size: 0; */
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	background-color: #fff;
+}
+/* ----------------------top------------------------------ */
+.body__top {
+	/* margin: 0 auto; */
+	width: 455px;
+	/* height: 100px; */
+	/* background-color: grey; */
+	border-bottom: 50px solid #bdbec0;
+	border-left: 200px solid transparent;
+	border-right: 160px solid transparent;
+	/* margin: 0px 0px 20px 0px; */
+	/* border-radius: 50px; */
+	/* border-radius: 0 0 30px 0; */
+	/* box-shadow: 0 0 0 2px black; */
+	position: relative;
+}
+.body__top::before {
+	content: "";
+	width: 130px;
+	height: 4px;
+	background-color: black;
+	position: absolute;
+	left: -30px;
+	top: 0px;
+}
+.body__top::after {
+	content: "";
+	width: 130px;
+	height: 4px;
+	background-color: #bdbec0;
+	position: absolute;
+	left: -30px;
+	top: 4px;
+}
+.accelerator {
+	position: absolute;
+	left: -230px;
+	top: -20px;
+}
+.accelerator__triangle {
+	height: 88px;
+	border-left: 80px solid black;
+	border-top: 45px solid transparent;
+	border-bottom: 25px solid transparent;
+	position: absolute;
+	border-radius: 20px;
+	top: 0px;
+	left: 0px;
+	/* outline: 4px solid black;
+	box-shadow: 0 0 0 4px black; */
+}
+.accelerator__triangle:before {
+	content: "";
+	height: 73px;
+	border-left: 76px solid #58585a;
+	border-top: 41px solid transparent;
+	border-bottom: 22px solid transparent;
+	position: absolute;
+	top: -37px;
+	left: -75px;
+	border-radius: 16px;
+}
+/* закрыть баг */
+.accelerator__triangle::after {
+	content: "";
+	width: 90px;
+	height: 7px;
+	position: absolute;
+	left: -55px;
+	top: 17px;
+	background-color: #bdbec0;
+	transform: rotate(-14deg) skew(-14deg);
+	z-index: 1;
+}
+.accelerator__rectangle {
+	width: 42px;
+	height: 20px;
+	background-color: #58585a;
+	border: 4px solid black;
+	border-left: transparent;
+	border-radius: 0 10px 0 0;
+	position: absolute;
+	left: 68px;
+	top: 38px;
+}
+/* розетка */
+.accelerator__rectangle::before {
+	width: 14px;
+	height: 14px;
+	border: 4px solid black;
+	border-radius: 2px;
+	content: "";
+	display: inline-block;
+	transform: translate(-30px, -7px);
+}
+.accelerator__rectangle::after {
+	width: 50px;
+	height: 4px;
+	background-color: black;
+	border-radius: 2px;
+	content: "";
+	display: inline-block;
+	/* transform: translate(-30px, -7px); */
+	transform-origin: left center;
+	transform: rotate(10deg) translate(-30px, -23px);
+	position: relative;
+}
+.accelerator__decor-white {
+	width: 60px;
+	height: 60px;
+	border: 4px solid black;
+	border-radius: 50%;
+	position: absolute;
+	top: 200px;
+	left: 0;
+}
+.accelerator__decor-white-left,
+.accelerator__decor-white-right {
+	width: 60px;
+	height: 60px;
+	border: 4px solid black;
+	border-radius: 50%;
+	position: absolute;
+	top: 17px;
+	left: 110px;
+	z-index: -1;
+}
+.accelerator__decor-white-right {
+	top: 7px;
+	left: 135px;
+	z-index: -1;
+	background-color: #fff;
+}
+.accelerator__decor-white-left::after,
+.accelerator__decor-white-right::after {
+	content: "";
+	width: 60px;
+	height: 60px;
+	border: 8px solid black;
+	border-radius: 50%;
+	position: absolute;
+	top: -4px;
+	left: -4px;
+	transform: scale(0.5);
+}
+/* -----------------------part-body-top */
+.part-body-top {
+	position: absolute;
+	top: -18px;
+	left: -30px;
+}
+.part-body-top__top {
+	background-color: #edeeef;
+	border: 4px solid black;
+	width: 40px;
+	height: 10px;
+	border-radius: 5px;
+}
+.part-body-top__middle {
+	width: 10px;
+	height: 10px;
+	margin: -4px 0px -4px 0px;
+	background-color: #edeeef;
+	border-left: 4px solid black;
+	border-right: 4px solid black;
+	transform: translate(4px, 0px);
+	position: relative;
+	z-index: 1;
+}
+.part-body-top__bottom {
+	background-color: #edeeef;
+	border: 4px solid black;
+	width: 40px;
+	height: 11px;
+	border-radius: 3px 0 3px 0;
+	transform: translate(-5px, 0);
+}
+.part-body-top__circle {
+	width: 17px;
+	height: 17px;
+	border-radius: 50%;
+	border: 4px solid black;
+	position: absolute;
+	top: 3px;
+	left: -9px;
+}
+/* ----------------------------------------- */
+.line-wind-shield {
+	width: 125px;
+	height: 4px;
+	background-color: black;
+	position: absolute;
+	left: 100px;
+	top: 0px;
+	transform-origin: left center;
+	transform: rotate(19deg);
+	z-index: 1;
+}
+.hood {
+	width: 190px;
+	height: 4px;
+	background-color: black;
+	position: absolute;
+	left: 215px;
+	top: 40px;
+	transform-origin: left center;
+	transform: rotate(8deg);
+}
+.back-wind-shield {
+	width: 177px;
+	height: 4px;
+	background-color: black;
+	position: absolute;
+	left: -245px;
+	top: 54px;
+	transform-origin: left center;
+	transform: rotate(-14deg) translate(45px, 0px);
+	z-index: 1;
+}
+.back-wind-shield::after {
+	content: "";
+	width: 177px;
+	height: 6px;
+	background-color: #bdbec0;
+	/* position: absolute;
+	left: -245px;
+	top: 54px; */
+	transform-origin: left center;
+	transform: translate(0px, 4px);
+	display: block;
+	position: relative;
+}
+/* --------------------.cut-glass-door----- */
+.cut-glass-door {
+	width: 200px;
+	height: 200px;
+	background-color: transparent;
+	position: absolute;
+	top: 10px;
+	left: -30px;
+	transform: rotate(22deg);
+	overflow: hidden;
+}
+.door-glass {
+	width: 190px;
+	height: 50px;
+	position: absolute;
+	left: -3px;
+	top: 0px;
+	background-color: #c3e7e5;
+	border-radius: 20px 20px 10px;
+	border: 4px solid black;
+	transform: skew(0deg);
+	transform: rotate(-22deg);
+}
+.door-glass::after {
+	content: "";
+	width: 98px;
+	height: 5px;
+	background-color: black;
+	position: absolute;
+	top: -5px;
+	left: 95px;
+	transform-origin: left center;
+	transform: rotate(22deg);
+}
+.door-mini {
+	width: 45px;
+	height: 4px;
+	position: absolute;
+	background-color: black;
+	top: 37px;
+	left: 44px;
+	transform: rotate(-22deg);
+	border-radius: 30px 100px 0 0;
+}
+.door-mini::before {
+	width: 25px;
+	height: 4px;
+	position: absolute;
+	background-color: black;
+	top: -5px;
+	left: 0px;
+	content: "";
+	transform-origin: left center;
+	transform: rotate(-45deg) translate(-28px, 5px);
+}
+.door-mini::after {
+	width: 48px;
+	height: 4px;
+	position: absolute;
+	background-color: black;
+	top: 0px;
+	left: 41px;
+	content: "";
+	transform-origin: left center;
+	transform: rotate(22deg);
+}
+/* -------------------------front-wind-shield */
+.front-wind-shield__circle div {
+	width: 17px;
+	height: 17px;
+	background-color: RGB(222, 242, 241);
+	/* background-color: black; */
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	border: 4px solid black;
+	margin: 0px 0px 0px -6.5px;
+}
+.front-wind-shield__circle {
+	background-color: transparent;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	overflow: hidden;
+	transform: rotate(15deg);
+}
+.front-wind-shield__body {
+	width: 110px;
+	height: 5px;
+	background-color: RGB(222, 242, 241);
+	/* background-color: black; */
+	position: absolute;
+	top: 0px;
+	left: 0;
+	transform-origin: left center;
+	transform: rotate(-160deg) translate(-2px, 1px);
+}
+.front-wind-shield__body::after {
+	content: "";
+	width: 100%;
+	height: 3px;
+	background-color: RGB(222, 242, 241);
+	/* background-color: green; */
+	position: absolute;
+	top: -3px;
+	left: 0;
+}
+.front-wind-shield__body::before {
+	content: "";
+	width: 50%;
+	height: 4px;
+	background-color: RGB(222, 242, 241);
+	/* background-color: black; */
+	position: absolute;
+	top: -7.5px;
+	left: 0;
+}
+.front-wind-shield__ramp {
+	width: 110px;
+	height: 4px;
+	background-color: black;
+	position: absolute;
+	left: 0;
+	top: 0px;
+	transform-origin: left center;
+	transform: rotate(-157deg) translate(-3px, -10px);
+}
+.front-wind-shield__ramp::before {
+	width: 8%;
+	height: 4px;
+	background-color: black;
+	/* background-color: black; */
+	position: absolute;
+	left: 0;
+	top: 10px;
+	content: "";
+	transform-origin: left center;
+	transform: translate(110px, -11px) rotate(60deg);
+}
+.front-wind-shield {
+	position: absolute;
+	top: 40px;
+	left: 205px;
+}
+.rear-mirror {
+	width: 25px;
+	height: 22px;
+	position: absolute;
+	background-color: #58585a;
+	top: 42px;
+	left: 152px;
+	border: 4px solid black;
+	border-radius: 10.5px 0 0 10.5px;
+}
+/* --------------------middle--------------------------------------- */
+.body__middle {
+	width: 670px;
+	border-bottom: 25px solid #bdbec0;
+	border-right: 210px solid transparent;
+	border-radius: 0 0 30px 0;
+	/* position: absolute;
+	left: 0;
+	top: 70px; */
+}
+.body__middle::after {
+	content: "";
+	width: 88.9%;
+	position: absolute;
+	left: 0;
+	bottom: -24px;
+	height: 32px;
+	background-color: #bdbec0;
+	border-bottom: 4px solid black;
+	border-right: 4px solid black;
+	margin: 0px 0px 0px -4px;
+	z-index: -1;
+}
+.body__middle-back-part {
+	width: 55px;
+	height: 17px;
+	position: absolute;
+	top: 62px;
+	left: -35px;
+	background-color: #bdbec0;
+	border: 4px solid black;
+	border-left: transparent;
+	border-radius: 0 5px 0 0;
+	transform: rotate(-85deg) skew(14deg, 0);
+	z-index: 1;
+}
+.body__middle-back-part::before {
+	content: "";
+	width: 14px;
+	height: 12px;
+	position: absolute;
+	top: -10px;
+	left: -2px;
+	background-color: #bdbec0;
+	border-bottom: 4px solid black;
+	transform: rotate(-120deg) skew(14deg, 0);
+}
+.body__middle-back-part::after {
+	content: "";
+	width: 25px;
+	height: 4px;
+	position: absolute;
+	top: 0px;
+	left: -11px;
+	background-color: black;
+	/* border-bottom: 4px solid black; */
+	transform: rotate(-260deg) skew(14deg, 0);
+}
+.body__front-light {
+	width: 20px;
+	height: 31px;
+	border-bottom: 4px solid black;
+	border-top: 4px solid transparent;
+	border-right: transparent;
+	position: absolute;
+	top: 68px;
+	left: 591px;
+	background-color: #bdbec0;
+}
+.body__front-light::before {
+	height: 31px;
+	width: 4px;
+	background-color: black;
+	content: "";
+	display: inline-block;
+	position: relative;
+	left: -4px;
+	top: -5px;
+	z-index: 1;
+}
+
+.body__front-light::after {
+	height: 35px;
+	width: 4px;
+	background-color: black;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 2px;
+	transform: rotate(-27deg) translate(13px, -2px);
+}
+
+.body__under-light {
+	position: absolute;
+	right: 96px;
+	top: 95px;
+}
+
+.under-light-body__top {
+	width: 50px;
+	height: 12px;
+	background-color: #58585a;
+	border: 4px solid black;
+	position: absolute;
+	left: 0;
+	top: 0px;
+	transform: skew(20deg);
+	border-radius: 0 6px 0 0;
+}
+.under-light-body__bottom {
+	width: 50px;
+	height: 12px;
+	background-color: #58585a;
+	border: 4px solid black;
+	position: absolute;
+	left: 0;
+	top: 20px;
+	transform: rotate(-15deg) translate(0, 2px);
+	border-radius: 0 6px 0 0;
+}
+.body__door-shadow {
+	width: 196px;
+	height: 0;
+	border-top: 21px solid #dcddde;
+	border-right: 5px solid transparent;
+	border-left: 14px solid transparent;
+	border-radius: 3px;
+	position: absolute;
+	left: 200px;
+	top: 65px;
+	z-index: 1;
+}
+.body__door-shadow::after {
+	content: "";
+	width: 6px;
+	height: 6px;
+	background-color: black;
+	border-radius: 50%;
+	position: absolute;
+	top: -16px;
+	left: -10px;
+}
+.body__hood-door-shadow {
+	width: 170px;
+	height: 0;
+	border-bottom: 21px solid #dcddde;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+	border-radius: 3px 50px 3px 3px;
+	position: absolute;
+	left: 410px;
+	top: 65px;
+	z-index: 1;
+}
+.body__hood-door-shadow::before {
+	content: "";
+	width: 70px;
+	height: 6px;
+	background-color: #bdbec0;
+	position: absolute;
+	top: -2px;
+	left: 105px;
+	transform: rotate(8deg);
+}
+.body__back-door-shadow {
+	width: 183px;
+	height: 0;
+	border-bottom: 21px solid #dcddde;
+	border-right: 14px solid transparent;
+	border-left: 5px solid transparent;
+	border-radius: 4px;
+	position: absolute;
+	left: 7px;
+	top: 65px;
+	z-index: 1;
+}
+.body__back-door-shadow::after {
+	content: "";
+	width: 70px;
+	/* background-color: #bdbec0; */
+	border-bottom: 5px solid #bdbec0;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+	position: absolute;
+	top: 16px;
+	left: 64px;
+}
+.body__back-decor {
+	position: absolute;
+	left: 17px;
+	top: 27px;
+	z-index: 3;
+}
+.middle-tirangle {
+	background-color: transparent;
+	position: absolute;
+	width: 150px;
+	height: 70px;
+	top: 0px;
+	left: 0px;
+	transform: rotate(-14deg);
+	overflow: hidden;
+	z-index: 1;
+}
+.middle-tirangle__body {
+	width: 135px;
+	height: 47px;
+	background-color: #3a3a3c;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	z-index: 1;
+	border: 4px black solid;
+	border-radius: 0 10px 15px 15px;
+	transform: skew(-10deg) rotate(14deg) translate(5px, -17px);
+}
+.decor-back-body__upper-line {
+	width: 128px;
+	height: 4px;
+	background-color: black;
+	position: absolute;
+	top: 15px;
+	left: 10px;
+	transform-origin: left center;
+	transform: rotate(-14deg);
+	z-index: 1;
+}
+.decor-back-body__green-decor-1,
+.decor-back-body__green-decor-2,
+.decor-back-body__green-decor-3 {
+	width: 75px;
+	height: 10px;
+	position: absolute;
+	left: 52px;
+	top: 20px;
+	background-color: #3bbe4d;
+	border: 4px solid black;
+	border-radius: 5px;
+	z-index: 1;
+}
+.decor-back-body__green-decor-2 {
+	top: 12px;
+}
+.decor-back-body__green-decor-3 {
+	top: 4px;
+}
+.decor-back-body__yellow-decor {
+	border: 4px solid black;
+	height: 12px;
+	width: 25px;
+	position: absolute;
+	left: 23px;
+	top: 17px;
+	background-color: #fff200;
+	border-radius: 6px;
+	z-index: 1;
+}
+.decor-back-body__red-decor-1,
+.decor-back-body__red-decor-2 {
+	border: 4px solid black;
+	width: 15px;
+	height: 10px;
+	background-color: #d72a29;
+	border-radius: 5px;
+	position: absolute;
+	top: -3px;
+	left: 80px;
+	z-index: 1;
+}
+.decor-back-body__red-decor-2 {
+	left: 100px;
+}
+.decor-back-body__black-decor {
+	width: 30px;
+	height: 4px;
+	background-color: black;
+	position: absolute;
+	top: -10px;
+	left: 110px;
+	transform-origin: left center;
+	transform: rotate(30deg);
+	z-index: 1;
+}
+.decor-back-body__black-decor::before {
+	content: "";
+	width: 20px;
+	height: 4px;
+	display: inline-block;
+	background-color: black;
+	position: relative;
+	z-index: 1;
+	transform: translate(7px, -17px);
+}
+/* --------------------------body__bottom */
+/* ------------------------bottom-body */
+.body__bottom {
+	position: absolute;
+	left: -5px;
+	top: 99px;
+}
+.bottom-body__upper {
+	width: 596px;
+	height: 25px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #bdbec0;
+	border-left: 4px solid black;
+	border-right: 4px solid black;
+}
+/* --------bamper------------------------------------- */
+.bottom-body__bamper {
+	position: absolute;
+	top: 5px;
+	left: 584px;
+}
+.bamper-bottom-body {
+	font-size: 0;
+}
+.bamper-bottom-body__white-decor {
+	background-color: #e7e8e9;
+	width: 50px;
+	height: 18px;
+	border: 4px solid black;
+	border-radius: 2px;
+}
+.bamper-bottom-body__dark-decor {
+	background-color: #5e5e60;
+	width: 54px;
+	height: 22px;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	left: -26px;
+	border: 4px solid black;
+	border-radius: 3px;
+	padding: 1.5px 3px;
+}
+.bamper-bottom-body__light-grey-decor {
+	height: 11px;
+	width: 20px;
+	background-color: #d1d2d4;
+	border-radius: 2px;
+	display: inline-block;
+}
+.bamper-bottom-body__light-grey-decor::after {
+	height: 11px;
+	width: 8px;
+	background-color: #d1d2d4;
+	margin: 0px 0 0px 25px;
+	border-radius: 2px;
+	display: inline-block;
+	content: "";
+}
+/* ---rear-bamper------------------------------------------------ */
+.bottom-body__rear-bamper {
+	position: absolute;
+	left: -26px;
+	top: -5px;
+	z-index: 1;
+}
+.rear-bamper-bottom-body__main {
+	width: 30px;
+	height: 24px;
+	background-color: #58585a;
+	border: 4px solid black;
+	border-radius: 5px 0 0 10px;
+	text-align: center;
+	font-size: 0;
+	padding: 1px 0px 0px 0px;
+}
+.rear-bamper-bottom-body__main::after {
+	content: "";
+	width: 0;
+	height: 0;
+	border-right: 20px solid #58585a;
+	border-bottom: 12px solid transparent;
+	transform: translate(2px, 10px);
+	display: block;
+}
+.rear-bamper-bottom-body__decor {
+	width: 15px;
+	height: 4px;
+	background-color: black;
+	display: inline-block;
+	border-radius: 4px;
+}
+.rear-bamper-bottom-body__wing-line {
+	width: 84px;
+	height: 4px;
+	position: absolute;
+	top: 19px;
+	left: 4px;
+	transform-origin: left center;
+	transform: rotate(22deg) translate(2px, -1px);
+	background-color: black;
+}
+/* ------bottom-body-----middle------------------------------------------------- */
+.bottom-body__middle {
+	width: 596px;
+	height: 20px;
+	position: absolute;
+	left: 0;
+	top: 25px;
+	border-top: ;
+	background-color: #bdbec0;
+	/* border-bottom: 4px solid black; */
+	border-right: 4px solid black;
+}
+/* ------------------------------------- */
+.bottom-body__bamper-down-part {
+	position: absolute;
+	left: 550px;
+	top: 30px;
+}
+.bamper-down-part-bottom-body {
+	font-size: 0;
+}
+.bamper-down-part-bottom-body::before {
+	content: "";
+	width: 45px;
+	height: 4px;
+	background-color: black;
+	transform-origin: left center;
+	display: inline-block;
+	position: absolute;
+	transform: rotate(-15deg) translate(-2px, 10px);
+	z-index: 1;
+}
+.bamper-down-part-bottom-body__rotate {
+	background-color: transparent;
+	width: 100px;
+	height: 40px;
+	transform: rotate(-15deg);
+	overflow: hidden;
+}
+.bamper-down-part-bottom-body__triangle {
+	width: 50px;
+	height: 20px;
+	margin: -7px 0px 0px 0px;
+	background-color: #58585a;
+	border: 4px solid black;
+	border-radius: 0 0 8px 0;
+	transform: rotate(15deg);
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+/* --------подкрылок--передний----------------------------- */
+.bottom-body__wheel-space {
+	position: absolute;
+	left: 447px;
+	top: -15px;
+	z-index: 2;
+}
+.wheel-space-bottom-body {
+}
+.wheel-space-bottom-body__top {
+	height: 66px;
+	width: 106px;
+	background-color: #2e2e2f;
+	border: 4px solid black;
+	border-radius: 50px 50px 0 0;
+	border-bottom: transparent;
+}
+.wheel-space-bottom-body__bottom {
+	background-color: #2e2e2f;
+	border: 4px solid black;
+	width: 30px;
+	height: 12px;
+	border-top: transparent;
+}
+/* ---------подкрылок задний---------------------------------------------------- */
+.bottom-body__rear-wheel-space {
+	position: absolute;
+	left: 57px;
+	top: -15px;
+	z-index: 2;
+}
+.rear-wheel-space-bottom-body__top {
+	height: 64px;
+	width: 115px;
+	background-color: #2e2e2f;
+	border: 4px solid black;
+	border-radius: 50px 50px 0 0;
+	border-bottom: transparent;
+}
+
+.rear-wheel-space-bottom-body__bottom {
+	background-color: #2e2e2f;
+	border: 4px solid black;
+	width: 30px;
+	height: 12px;
+	border-top: transparent;
+	transform: translate(84px, 0);
+}
+/* ---------------------------------------------------------------- */
+/* ---------порог------------------------------------ */
+.bottom-body__threshold {
+	position: absolute;
+	top: 38px;
+	left: 167px;
+	z-index: 1;
+}
+.threshold-bottom-body {
+}
+.threshold-bottom-body__item {
+	width: 286px;
+	height: 23px;
+	background-color: #58585a;
+	border: 4px solid black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 0 0 5px 5px;
+	padding: 3px 0px 0px 0px;
+}
+.threshold-bottom-body__step {
+	width: 185px;
+	height: 14px;
+	border: 4px solid black;
+	background-color: #b2b3b5;
+	border-radius: 7px;
+	margin: 0px 0px 0px 60px;
+	text-align: right;
+}
+.threshold-bottom-body__step::after {
+	content: "";
+	/* position: absolute;
+	top: 200px;
+	left: 0; */
+	width: 19px;
+	height: 15px;
+	border-bottom: 5px solid black;
+	border-right: 5px solid black;
+	border-radius: 0 0 30px 0;
+	transform: skew(-20deg) translate(18px, -10px);
+	display: inline-block;
+}
+.threshold-bottom-body__step::before {
+	content: "";
+	position: absolute;
+	top: -7px;
+	right: 1px;
+	width: 20px;
+	height: 4px;
+	background-color: black;
+	border-radius: 0 0 30px 0;
+	transform: rotate(-50deg);
+	display: inline-block;
+}
+.threshold-bottom-body__cable {
+	width: 23px;
+	height: 15px;
+	border-bottom: 5px solid black;
+	border-left: 5px solid black;
+	border-radius: 0 0 0px 40px;
+	transform: skew(20deg) translate(-152px, -8px);
+	display: inline-block;
+}
+.threshold-bottom-body__cable::after {
+	width: 110px;
+	height: 5px;
+	position: absolute;
+	top: 0;
+	left: -58px;
+	content: "";
+	background-color: black;
+	transform: rotate(-122deg) translate(52px, 0);
+}
+/* ---------door--------дверь----------------------------- */
+.bottom-body__dor-element {
+	position: absolute;
+	top: 12px;
+	left: 335px;
+}
+.dor-element-bottom-body {
+}
+.dor-element-bottom-body__dor-left-side {
+	width: 4px;
+	height: 50px;
+	position: absolute;
+	left: -145px;
+	top: -110px;
+	background-color: black;
+}
+.dor-element-bottom-body__dor-left-side::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	border-left: 4px solid black;
+	display: inline-block;
+	transform-origin: left top;
+	transform: translate(0, 50px);
+	border-radius: 0 0 0 10px;
+}
+.dor-element-bottom-body__dor-left-side::after {
+	content: "";
+	width: 91px;
+	height: 4px;
+	background-color: black;
+	display: inline-block;
+	transform-origin: left top;
+	transform: translate(4px, 32px) rotate(55deg);
+}
+.dor-element-bottom-body__dor-right-side {
+	width: 90px;
+	height: 4px;
+	background-color: black;
+	position: absolute;
+	top: 0;
+	left: 57px;
+	transform-origin: left center;
+	transform: rotate(-74deg) translate(-27px, 0);
+}
+.dor-element-bottom-body__handle {
+	width: 20px;
+	height: 3px;
+	border-radius: 1.5px;
+	background-color: black;
+	position: absolute;
+	top: -10px;
+	left: -102px;
+}
+/* ------арка-черная--------------------------------------- */
+
+.body__front-arc {
+	position: absolute;
+	left: 402px;
+	top: -5px;
+	z-index: 1;
+}
+
+.front-arc-body::after {
+	content: "";
+	width: 32px;
+	height: 5px;
+	background-color: black;
+	position: absolute;
+	right: -42px;
+	top: 93px;
+}
+.front-arc-body::before {
+	content: "";
+	width: 17px;
+	height: 5px;
+	background-color: black;
+	position: absolute;
+	right: -58px;
+	top: 92px;
+	transform-origin: left center;
+	transform: rotate(70deg);
+}
+.front-arc-body__body {
+	background-color: transparent;
+	/* width: 120px;
+	height: 120px; */
+	overflow: hidden;
+
+	transform: rotate(-22deg);
+}
+.front-arc-body__decor {
+	border: 5px solid black;
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	transform: translate(0, 85px);
+	/* display: inline-block; */
+	background-color: #bdbec0;
+}
+
+/* --------future-element------------------------------- */
+.body__future-element {
+	position: absolute;
+	top: 1px;
+	left: 165px;
+	z-index: 2;
+}
+.future-element-body {
+}
+.future-element-body__top {
+	width: 18px;
+	height: 44px;
+	background-color: #e7e8e9;
+	border: 4px solid black;
+	border-bottom: 5px solid black;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.future-element-body__top::before {
+	width: 50px;
+	height: 35px;
+	background-color: #e7e8e9;
+	border: 4px solid black;
+	border-bottom: 4px solid black;
+	border-top: transparent;
+	border-left: transparent;
+	position: absolute;
+	left: -36px;
+	top: 39px;
+	content: "";
+	border-radius: 0 0 30px 0;
+}
+.future-element-body__top::after {
+	width: 35px;
+	height: 22px;
+	background-color: #bdbec0;
+	border: 4px solid black;
+	border-bottom: 4px solid black;
+	border-top: transparent;
+	border-left: transparent;
+	position: absolute;
+	left: -35px;
+	top: 38px;
+	content: "";
+	border-radius: 0 0 30px 0;
+}
+.future-element-body__middle {
+	width: 70px;
+	height: 17.5px;
+	position: absolute;
+	top: 60.5px;
+	left: -101px;
+	background-color: #e7e8e9;
+	border-bottom: 4px solid black;
+	border-top: 4px solid black;
+	border-right: 5px solid black;
+}
+
+.future-element-body__rotate {
+	width: 150px;
+	height: 150px;
+	background-color: transparent;
+	position: absolute;
+	top: -55px;
+	left: -198px;
+	overflow: hidden;
+}
+.future-element-body__sub-middle {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: transparent;
+	overflow: hidden;
+	transform: translate(0, 115px);
+}
+.future-element-body__circle {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #e7e8e9;
+	border: 4px solid black;
+	transform: translate(50px, 0);
+}
+.future-element-body__circle::after {
+	width: 0;
+	height: 0;
+	/* background-color: #dcddde; */
+	position: absolute;
+	left: 28px;
+	top: 13.5px;
+	content: "";
+	z-index: 1;
+	border-top: 7px solid transparent;
+	border-right: 20px solid #e7e8e9;
+}
+.future-element-body__circle::before {
+	content: "";
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #bdbec0;
+	border: 4px solid black;
+}
+.future-element-body__down-item {
+	width: 44px;
+	height: 17px;
+	background-color: #58585a;
+	position: absolute;
+	top: 130px;
+	left: -180px;
+	border: 4px solid black;
+	border-top: transparent;
+	transform: rotate(22deg) translate(7px, -1px);
+	border-radius: 0 0 5px 5px;
+}
+.future-element-body__bottom {
+	width: 18px;
+	height: 54px;
+	background-color: #e7e8e9;
+	border: 4px solid black;
+	border-bottom: 5px solid black;
+	border-top: transparent;
+	position: absolute;
+	left: -0px;
+	top: 0px;
+	transform: rotate(22deg) translate(-109px, 140px);
+}
+.future-element-body__bottom::after {
+	height: 4px;
+	width: 20px;
+	background-color: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translate(-5px, 20px);
+	content: "";
+	border-radius: 2px;
+}
+
+/* ---------------------------------------------- */
+.body__patch {
+	width: 50px;
+	height: 50px;
+	background-color: inherit;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: rotate(63deg) translate(23px, 34px);
+	/* border-bottom: 4px solid black; */
+	z-index: 1;
+}
+.body__another-patch {
+}
+
+/* -------------------------------------------------- */
+
+/* -----------.wheel------------------------------------------ */
+.body__front-wheel {
+	font-size: 0;
+	position: absolute;
+	top: 135px;
+	/* left: 347px; */
+	left: 495px;
+	z-index: 2;
+}
+
+.body__rear-wheel {
+	font-size: 0;
+	position: absolute;
+	top: 135px;
+	left: 110px;
+	z-index: 2;
+}
+.wheel {
+}
+
+.outside {
+	width: 96px;
+	height: 96px;
+	position: absolute;
+	background-color: #4c4d4f;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	border: 4px solid black;
+}
+.outside::after {
+	width: 95px;
+	height: 95px;
+	position: absolute;
+	background-color: #4c4d4f;
+	top: 50%;
+	left: 50%;
+	border-radius: 50%;
+	border: 1px solid white;
+	content: "";
+	transform: translate(-50%, -50%) scale(0.82);
+}
+.inside {
+	width: 95px;
+	height: 95px;
+	position: absolute;
+	background-color: #dfdfe1;
+	top: 50%;
+	left: 50%;
+	border-radius: 50%;
+	/* border: 5px solid #4d4d4d; */
+	transform: translate(-50%, -50%) scale(0.65);
+	z-index: 1;
+}
+.inside::before {
+	width: 95px;
+	height: 95px;
+	position: absolute;
+	background-color: #d2d3d5;
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	border: 5px solid black;
+	/* transform: scale(0.65); */
+	content: "";
+}
+.iiner-circle {
+	width: 95px;
+	height: 95px;
+	position: absolute;
+	background-color: #d1d2d4;
+	top: 0px;
+	left: 0px;
+	border-radius: 50%;
+	border: 15px solid black;
+	transform: scale(0.28);
+}
+.decor-1,
+.decor-2,
+.decor-3,
+.decor-4,
+.decor-5,
+.decor-6,
+.decor-7,
+.decor-8,
+.decor-9,
+.decor-10,
+.decor-11,
+.decor-12,
+.decor-13,
+.decor-14,
+.decor-15,
+.decor-16,
+.decor-17,
+.decor-18 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -25px 0px 0px -3px;
+	transform: rotate(10deg) translate(0, -18px);
+	transform-origin: center bottom;
+	border-top: 25px solid black;
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+}
+.decor-2 {
+	transform: rotate(30deg) translate(0, -18px);
+}
+.decor-3 {
+	transform: rotate(50deg) translate(0, -18px);
+}
+.decor-4 {
+	transform: rotate(70deg) translate(0, -18px);
+}
+.decor-5 {
+	transform: rotate(90deg) translate(0, -18px);
+}
+.decor-6 {
+	transform: rotate(110deg) translate(0, -18px);
+}
+.decor-7 {
+	transform: rotate(130deg) translate(0, -18px);
+}
+.decor-8 {
+	transform: rotate(150deg) translate(0, -18px);
+}
+.decor-9 {
+	transform: rotate(170deg) translate(0, -18px);
+}
+.decor-10 {
+	transform: rotate(190deg) translate(0, -18px);
+}
+.decor-11 {
+	transform: rotate(210deg) translate(0, -18px);
+}
+.decor-12 {
+	transform: rotate(230deg) translate(0, -18px);
+}
+.decor-13 {
+	transform: rotate(250deg) translate(0, -18px);
+}
+.decor-14 {
+	transform: rotate(270deg) translate(0, -18px);
+}
+.decor-15 {
+	transform: rotate(290deg) translate(0, -18px);
+}
+.decor-16 {
+	transform: rotate(310deg) translate(0, -18px);
+}
+.decor-17 {
+	transform: rotate(330deg) translate(0, -18px);
+}
+.decor-18 {
+	transform: rotate(350deg) translate(0, -18px);
+}
+.body__top__part {
+}
